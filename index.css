@@ -72,6 +72,33 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+/* --------------- VARIABLE --------------- */
+:root {
+  /* Primary Color */
+  --primary-clr-mirage-50: #f4f6fb;
+  --primary-clr-mirage-100: #e8ecf6;
+  --primary-clr-mirage-200: #cbd8ec;
+  --primary-clr-mirage-300: #9db6dc;
+  --primary-clr-mirage-400: #6990c7;
+  --primary-clr-mirage-500: #4672b1;
+  --primary-clr-mirage-600: #345995;
+  --primary-clr-mirage-700: #2b4779;
+  --primary-clr-mirage-800: #273e65;
+  --primary-clr-mirage-900: #253555;
+  --primary-clr-mirage-950: #111827;
+
+  /* Primary Tipography */
+  --primary-fs-12: .75rem;
+  --primary-fs-14: .875rem;
+  --primary-fs-24: 1.5rem;
+  --primary-fs-12To16: clamp(0.75rem, 2vi + 1rem, 1rem);
+  --primary-fs-16To18: clamp(1rem, 2vi + 1rem, 1.125rem);
+  --primary-fs-16To20: clamp(1rem, 2vi + 1rem, 1.25rem);
+  --primary-fs-16To24: clamp(1rem, 2vi + 1rem, 1.5rem);
+  --primary-fs-36To40: clamp(2rem, 2vi + 1rem, 2.5rem);
+  --primary-fs-32To36: clamp(2rem, 2vi + 1rem, 2.25rem);
+}
+
 /* --------------- LAYOUT --------------- */
 body {
   font-family: 'Source Sans 3', sans-serif;

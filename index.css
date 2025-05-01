@@ -1,4 +1,3 @@
-
 /* Box sizing rules */
 *,
 *::before,
@@ -71,4 +70,36 @@ textarea:not([rows]) {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
+}
+
+/* --------------- LAYOUT --------------- */
+body {
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+header {
+  padding: 1.125em 1.25em;
+}
+
+header, nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+li a {
+  text-decoration: none;
 }

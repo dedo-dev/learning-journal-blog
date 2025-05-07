@@ -10,17 +10,17 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
+    <header class="header">
+        <div class="header__logo">
             <picture>
                 <source media="(min-width: 48em)" srcset="/images/logo-desktop.png">
                 <img src="/images/logo-mobile.jpg" alt="learning journal blog logo">
             </picture>
         </div>
         <nav>
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">about me</a></li>
+            <ul class="header__menu">
+                <li class="header__menu-item"><a class="header__menu-link" href="#">home</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">about me</a></li>
             </ul>
         </nav>
     </header>
@@ -28,13 +28,15 @@
         <section>
             <article>
                 <img src="/images/article-image-hero.jpg" alt="">
-                <time datetime="23/07/2022">july 23, 2022</time>
-                <h1><a href="#">My new journeyas a bootcamp student.</a></h1>
-                <p>
-                    After several months of learning in the Frontend Developer Career Path,
-                    I've made the big jump over to the Bootcamp to get expert code reviews
-                    of my Solo Projects projects and meet like-minded peers.
-                </p>
+                <div>
+                    <time datetime="23/07/2022">july 23, 2022</time>
+                    <h1><a href="#">My new journeyas a bootcamp student.</a></h1>
+                    <p>
+                        After several months of learning in the Frontend Developer Career Path,
+                        I've made the big jump over to the Bootcamp to get expert code reviews
+                        of my Solo Projects projects and meet like-minded peers.
+                    </p>
+                </div>
             </article>
         </section>
         <section>

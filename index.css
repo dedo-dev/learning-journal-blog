@@ -15,7 +15,7 @@ html {
 /* Remove default margin in favour of better control in authored CSS */
 body, h1, h2, h3, h4, p,
 figure, blockquote, dl, dd {
-  margin-block-end: 0;
+  margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -91,10 +91,11 @@ textarea:not([rows]) {
   --primary-fs-12: .75rem;
   --primary-fs-14: .875rem;
   --primary-fs-24: 1.5rem;
-  --primary-fs-12To16: clamp(0.75rem, 2vi + 1rem, 1rem);
+  --primary-fs-12To16: clamp(0.75rem, 0.663rem + 0.4348vi, 1rem);
   --primary-fs-16To18: clamp(1rem, 2vi + 1rem, 1.125rem);
   --primary-fs-16To20: clamp(1rem, 2vi + 1rem, 1.25rem);
   --primary-fs-16To24: clamp(1rem, 2vi + 1rem, 1.5rem);
+  --primary-fs-32To40: clamp(2rem, 1.8261rem + 0.8696vi, 2.5rem);
   --primary-fs-36To40: clamp(2rem, 2vi + 1rem, 2.5rem);
   --primary-fs-32To36: clamp(2rem, 2vi + 1rem, 2.25rem);
 }
@@ -128,15 +129,45 @@ body {
 }
 
 .header__menu-link {
+  color: inherit;
   text-decoration: none;
 }
 
 
-section {
-  position: relative;
+section:has(.featured-article) {
+  height: 100vdh;
+  margin-block-end: 5rem;
 }
 
-article img {
+.featured-article {
+  position: relative;
+  color: var(--primary-clr-mirage-100);
+  padding: 1.25em 1.56em;
+}
+
+.featured-article__img {
   position: absolute;
+  inset: 0;
   z-index: -1;
+  /* ⬇️ to be fixed */
+  height: 100%;
+  width: 100%;
+}
+
+.featured-article__date {
+  font-size: var(--primary-fs-12To16);
+  text-transform: uppercase;
+}
+
+.featured-article__title {
+  font-size: var(--primary-fs-32To40);
+}
+
+.featured-article__title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.featured-article__title, .featured-article__txt {
+  margin-block-start: .5rem;
 }

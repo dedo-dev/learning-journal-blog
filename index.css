@@ -104,29 +104,39 @@ body {
   font-family: 'Source Sans 3', sans-serif;
 }
 
-header {
+.header {
   padding: 1.125em 1.25em;
 }
 
-header, nav ul {
+.header, .header__menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav ul {
+.header__menu {
   gap: 8px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-ul li {
+.header__menu-item {
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-li a {
+.header__menu-link {
   text-decoration: none;
+}
+
+
+section {
+  position: relative;
+}
+
+article img {
+  position: absolute;
+  z-index: -1;
 }

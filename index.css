@@ -179,6 +179,7 @@ section:has(.article-wrapper) {
 .article-wrapper {
   display: grid;
   gap: 2.5rem;
+  margin-block-end: 1.75rem;
 }
 
 .article {
@@ -203,4 +204,13 @@ section:has(.article-wrapper) {
 .article__title-link {
   color: var(--primary-clr-mirage-950);
   text-decoration: none;
+}
+
+.loading-article-btn {
+  width: 100%;
+  background: transparent;
+  font-size: inherit;
+  font-weight: bold;
+  text-decoration: underline;
+  border: transparent;
 }

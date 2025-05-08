@@ -214,3 +214,16 @@ section:has(.article-wrapper) {
   text-decoration: underline;
   border: transparent;
 }
+
+.footer {
+  background: var(--primary-clr-mirage-950);
+  color: var(--primary-clr-mirage-100);
+  padding: 2.25em;
+  font-size: var(--primary-fs-12);
+  text-align: center;
+}
+
+.footer__title {
+  font-weight: bold;
+  margin-block-end: .25rem;
+}

@@ -134,9 +134,9 @@ body {
 }
 
 
+/* ⬇️ to be fixed */
 section:has(.featured-article) {
   height: 100vdh;
-  margin-block-end: 5rem;
 }
 
 .featured-article {
@@ -170,4 +170,37 @@ section:has(.featured-article) {
 
 .featured-article__title, .featured-article__txt {
   margin-block-start: .5rem;
+}
+
+section:has(.article-wrapper) {
+  padding: 2.125em 1.25em;
+}
+
+.article-wrapper {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.article__img {
+  margin-block-end: .875rem;
+}
+
+.article__date {
+  font-size: var(--primary-fs-14);
+  text-transform: uppercase;
+}
+
+.article__title {
+  font-size: var(--primary-fs-24);
+}
+
+.article__title-link {
+  color: var(--primary-clr-mirage-950);
+  text-decoration: none;
 }
